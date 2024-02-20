@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h3{
-            color: violet;
-        }     
-
-        tr{
-            color: green;
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        a{
+        h3 {
+            color: violet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tr {
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
             color: red;
         }
 
-        label{
+        label {
             color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
+
 <body style="background-color: black;">
     <h1 style="color: red;">Links</h1>
     <nav>
-         <Ul>
+        <Ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
-         </Ul>
+        </Ul>
     </nav>
 
     <h1 style="color: orange;">Images</h1>
     <figure>
         <img src="https://wallpapercave.com/wp/wp7549566.jpg" alt="Halloween" height="300" width="400"><br>
         <figcaption>
-            <pre style="font-family: Arial, Helvetica, sans-serif;color: orange;">                           Halloween Pumpkin</pre>
+            <pre
+                style="font-family: Arial, Helvetica, sans-serif;color: orange;">                           Halloween Pumpkin</pre>
         </figcaption>
     </figure>
 
     <h1 style="color: yellow;">Forms</h1>
     <form action="#">
         <label for="name">Name:</label>
-        <input style="background-color: black;" type="text" name="name" id="name"required><br>
+        <input style="background-color: black;color: whitesmoke;" type="text" name="name" id="name" required><br>
         <label for="password">Password:</label>
-        <input style="background-color: black;" type="password" name="pasword" id="password" required minlength="5"><br>
+        <input style="background-color: black;color: whitesmoke;" type="password" name="pasword" id="password" required
+            minlength="5"><br>
         <label for="gender">Gender</label><br>
         <input type="radio" name="gender" id="male">
         <label for="male">Male</label>
@@ -56,7 +71,7 @@
         <label for="terms">I accept the terms and conditions</label><br>
         <input style="background-color: black;color: yellow;" type="submit" value="Submit"><br>
     </form>
- 
+
     <h1 style="color: green;">Tables</h1>
     <table border="3">
         <tr>
@@ -80,15 +95,23 @@
     </table>
 
     <h1 style="color: violet;">Audio and Video</h1>
-    
-        <video controls width="800" height="500">
-            <source src="Juan Karlos  - Araw.mp4">
-        </video>
-        <h3>Juan Karlos - Araw</h3><br><br><br><br>
 
-        <audio controls>
-            <source src="Juan Karlos - Ere.mp3" type="audio/mp3">
-        </audio>
-        <h3>Juan Karlos - Ere </h3>
-</body>
+    <video controls width="800" height="500">
+        <source src="Juan Karlos  - Araw.mp4">
+    </video>
+    <h3>Juan Karlos - Araw</h3><br><br><br><br>
+
+    <audio controls>
+        <source src="Juan Karlos - Ere.mp3" type="audio/mp3">
+    </audio>
+
+    <h3>Juan Karlos - Ere </h3>br><br><br><br>
+
+    <h1 style="color: gray;">Iframes and Embedded Content</h1>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15310.08701017009!2d120.60001182746844!3d16.398307122341585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1426d6ff0fd%3A0xfe9ac4d43fc84157!2sUniversity%20of%20the%20Cordilleras!5e0!3m2!1sen!2sph!4v1707293609047!5m2!1sen!2sph"
+        width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </html>
