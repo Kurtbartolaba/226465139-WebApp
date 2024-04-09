@@ -11,17 +11,17 @@
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li>
-          <a class="nav-link" href="#What_you_should_already_know"
-            >What you should already know</a
+          <a class="nav-link" href="#Overview_from_what_i_learned"
+            >Overview From What I Learned</a
           >
         </li>
         <li>
-          <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+          <a class="nav-link" href="#git"
+            >Git</a
           >
         </li>
-        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#About_repositories">Hello world</a></li>
+        <li><a class="nav-link" href="#HTML_Elements">Variables</a></li>
         <li>
           <a class="nav-link" href="#Declaring_variables"
             >Declaring variables</a
@@ -85,8 +85,8 @@
           </ul>
         </article>
       </section>
-      <section class="main-section" id="What_you_should_already_know">
-        <header>What you should already know</header>
+      <section class="main-section" id="Overview_from_what_i_learned">
+        <header>Overview From What I Learn</header>
         <article>
           <p>This guide assumes you have the following basic background:</p>
 
@@ -103,72 +103,109 @@
           </ul>
         </article>
       </section>
-      <section class="main-section" id="JavaScript_and_Java">
-        <header>JavaScript and Java</header>
+      <section class="main-section" id="git">
+        <header>Git</header>
         <article>
           <p>
-            JavaScript and Java are similar in some ways but fundamentally
-            different in some others. The JavaScript language resembles Java but
-            does not have Java's static typing and strong type checking.
-            JavaScript follows most Java expression syntax, naming conventions
-            and basic control-flow constructs which was the reason why it was
-            renamed from LiveScript to JavaScript.
-          </p>
-
-          <p>
-            In contrast to Java's compile-time system of classes built by
-            declarations, JavaScript supports a runtime system based on a small
-            number of data types representing numeric, Boolean, and string
-            values. JavaScript has a prototype-based object model instead of the
-            more common class-based object model. The prototype-based model
-            provides dynamic inheritance; that is, what is inherited can vary
-            for individual objects. JavaScript also supports functions without
-            any special declarative requirements. Functions can be properties of
-            objects, executing as loosely typed methods.
-          </p>
-          <p>
-            JavaScript is a very free-form language compared to Java. You do not
-            have to declare all variables, classes, and methods. You do not have
-            to be concerned with whether methods are public, private, or
-            protected, and you do not have to implement interfaces. Variables,
-            parameters, and function return types are not explicitly typed.
+            To use Git, developers use specific commands to copy, create, change, and combine code. These commands can be executed directly from the command line or by using an application like GitHub Desktop. Here are some common commands for using Git:
           </p>
         </article>
+      <ul>
+        <li><strong>git init</strong> initializes a brand new Git repository and begins tracking an existing directory. It adds a hidden subfolder within the existing directory that houses the internal data structure required for version control.</li>
+        <li><strong>git clone</strong> creates a local copy of a project that already exists remotely. The clone includes all the project's files, history, and branches.</li>
+        <li><strong>git add .</strong> stages a change. Git tracks changes to a developer's codebase, but it's necessary to stage and take a snapshot of the changes to include them in the project's history. This command performs staging, the first part of that two-step process. Any changes that are staged will become a part of the next snapshot and a part of the project's history. Staging and committing separately gives developers complete control over the history of their project without changing how they code and work.</li>
+        <li><strong>git commit</strong> saves the snapshot to the project history and completes the change-tracking process. In short, a commit functions like taking a photo. Anything that's been staged with <strong>git add</strong> will become a part of the snapshot with <strong>git commit</strong>.</li>
+        <li><strong>git status</strong> shows the status of changes as untracked, modified, or staged.</li>
+        <li><strong>git branch</strong> shows the branches being worked on locally.</li>
+        <li><strong>git merge</strong> merges lines of development together. This command is typically used to combine changes made on two distinct branches. For example, a developer would merge when they want to combine changes from a feature branch into the main branch for deployment.</li>
+        <li><strong>git pull</strong> updates the local line of development with updates from its remote counterpart. Developers use this command if a teammate has made commits to a branch on a remote, and they would like to reflect those changes in their local environment.</li>
+        <li><strong>git push</strong> updates the remote repository with any commits made locally to a branch.</li>
+      </ul>
       </section>
-      <section class="main-section" id="Hello_world">
-        <header>Hello world</header>
+      <section class="main-section" id="About_repositories">
+        <header>About repositories</header>
         <article>
-          To get started with writing JavaScript, open the Scratchpad and write
-          your first "Hello world" JavaScript code:
-          <code
-            >function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");
-          </code>
+        A repository, or Git project, encompasses the entire collection of files and folders associated with a project, along with each file's revision history. The file history appears as snapshots in time called commits. The commits can be organized into multiple lines of development called branches. Because Git is a DVCS, repositories are self-contained units and anyone who has a copy of the repository can access the entire codebase and its history. Using the command line or other ease-of-use interfaces, a Git repository also allows for: interaction with the history, cloning the repository, creating branches, committing, merging, comparing changes across versions of code, and more.<br> <br>
 
-          Select the code in the pad and hit Ctrl+R to watch it unfold in your
-          browser!
+Through platforms like GitHub, Git also provides more opportunities for project transparency and collaboration. Public repositories help teams work together to build the best possible final product.
         </article>
       </section>
-      <section class="main-section" id="Variables">
-        <header>Variables</header>
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
         <p>
-          You use variables as symbolic names for values in your application.
-          The names of variables, called identifiers, conform to certain rules.
+          HTML elements are the building blocks of web pages. They define the structure and content of a webpage by marking up text and other media to specify their meaning and presentation. Each HTML element is represented by a tag enclosed in angle brackets.
         </p>
-        <p>
-          A JavaScript identifier must start with a letter, underscore (_), or
-          dollar sign ($); subsequent characters can also be digits (0-9).
-          Because JavaScript is case sensitive, letters include the characters
-          "A" through "Z" (uppercase) and the characters "a" through "z"
-          (lowercase).
-        </p>
-        <p>
-          You can use ISO 8859-1 or Unicode letters such as å and ü in
-          identifiers. You can also use the Unicode escape sequences as
-          characters in identifiers. Some examples of legal names are
-          Number_hits, temp99, and _name.
-        </p>
-      </section>
+        <h2>Basic HTML </h2>
+        <ul>
+          <li><strong>&lt;!DOCTYPE;&gt;</strong> Defines the document type</li>
+          <li><strong>&lt;html&gt;</strong> Defines an HTML document</li>
+          <li><strong>&lt;head&gt;</strong> Contains metadata/information for the document</li>
+          <li><strong>&lt;title&gt;</strong> Defines a title for the document</li>
+          <li><strong>&lt;body&gt;</strong> Defines the document's body</li>
+          <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> Defines HTML headings</li>
+          <li><strong>&lt;p&gt;</strong> Defines a paragraph</li>
+          <li><strong>&lt;br&gt;</strong> Inserts a single line break</li>
+          <li><strong>&lt;hr&gt;</strong> Defines a thematic change in the content</li>
+          <li><strong>&lt;!--...--&gt;</strong> Defines a comment</li>
+        </ul>
+
+
+        <h2>Formatting</h2>
+        <ul>
+          <li><strong>&lt;frame&gt;</strong>Not supported in HTML5.Defines a window (a frame) in a frameset</li>
+          <li><strong>&lt;frameset&gt;</strong>Not supported in HTML5.Defines a set of frames</li>
+          <li><strong>&lt;notframes&gt;</strong>Not supported in HTML5.Defines an alternate content for users that do not support frames</li>
+          <li><strong>&lt;iframe&gt;</strong>Defines an inline frame</li>
+        </ul>
+
+
+        <h2>Forms and Input</h2>
+        <ul>
+          <li><strong>&lt;form&gt;</strong> Defines an HTML form for user input</li>
+          <li><strong>&lt;input&gt;</strong> Defines an input control</li>
+          <li><strong>&lt;textarea&gt;</strong> Defines a multiline input control</li>
+          <li><strong>&lt;button&gt;</strong> Defines a clickable button</li>
+          <li><strong>&lt;select&gt;</strong> Defines a drop-down list</li>
+          <li><strong>&lt;optgroup&gt;</strong> Defines a group of related options in a drop-down list</li>
+          <li><strong>&lt;option&gt;</strong> Defines an option in a drop-down list</li>
+          <li><strong>&lt;label&gt;</strong> Defines a label for an input element</li>
+          <li><strong>&lt;fieldset&gt;</strong> Groups related elements in a form</li>
+          <li><strong>&lt;legend&gt;</strong> Defines a caption for a fieldset element</li>
+          <li><strong>&lt;datalist&gt;</strong> Specifies a list of pre-defined options for input controls</li>
+          <li><strong>&lt;output&gt;</strong> Defines the result of a calculation</li>
+        </ul>
+
+        <h2>Links</h2>
+        <ul>
+          <li><strong>&lt;a&gt;</strong> Defines a hyperlink</li>
+          <li><strong>&lt;link&gt;</strong> Defines the relationship between a document and an external resource (most used to link to style sheets)</li>
+          <li><strong>&lt;nav&gt;</strong> Defines navigation links</li>
+        </ul>
+
+        <h2>Tables</h2>
+        <ul>
+          <li><strong>&lt;table&gt;</strong> Defines a table</li>
+          <li><strong>&lt;caption&gt;</strong> Defines a table caption</li>
+          <li><strong>&lt;th&gt;</strong> Defines a header cell in a table</li>
+          <li><strong>&lt;tr&gt;</strong> Defines a row in a table</li>
+          <li><strong>&lt;td&gt;</strong> Defines a cell in a table</li>
+          <li><strong>&lt;thead&gt;</strong> Groups the header content in a table</li>
+          <li><strong>&lt;tbody&gt;</strong> Groups the body content in a table</li>
+          <li><strong>&lt;tfoot&gt;</strong> Groups the footer content in a table</li>
+          <li><strong>&lt;col&gt;</strong> Specifies column properties for each column within a <colgroup> element</li>
+          <li><strong>&lt;colgroup&gt;</strong> Styles and Semantics</li>
+        </ul>
+
+
+        <h2>Programming</h2>
+        <ul>
+          <li><strong>&lt;script&gt;</strong> Defines a client-side script</li>
+          <li><strong>&lt;nonscript&gt;</strong> Defines an alternate content for users that do not support client-side scripts</li>
+          <li><strong>&lt;applet&gt;</strong> Not supported in HTML5. Use <embed> or <object> instead.Defines an embedded applet</li>
+          <li><strong>&lt;embed&gt;</strong> Defines a container for an external (non-HTML) application</li>
+          <li><strong>&lt;object&gt;</strong> Defines an embedded object</li>
+          <li><strong>&lt;param&gt;</strong> Defines a parameter for an object</li><br>
+        </ul>
       <section class="main-section" id="Declaring_variables">
         <header>Declaring variables</header>
         <article>
