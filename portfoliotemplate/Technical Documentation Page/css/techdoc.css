@@ -1,8 +1,8 @@
 html,
 body {
   min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
+  color: rgb(112, 112, 112);
+  background-color: beige;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -18,12 +18,13 @@ body {
   border-color: rgba(0, 22, 22, 0.4);
 }
 
-header {
-  color: black;
+h1 {
+  color: rgb(112, 112, 112);
   margin: 10px;
   text-align: center;
   font-size: 1.8em;
   font-weight: thin;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-doc header {
@@ -49,7 +50,7 @@ header {
 #navbar a {
   display: block;
   padding: 10px 30px;
-  color: #4d4e53;
+  color: rgb(112, 112, 112);
   text-decoration: none;
   cursor: pointer;
 }
@@ -62,7 +63,7 @@ header {
 }
 
 section article {
-  color: #4d4e53;
+  color: rgb(112, 112, 112);
   margin: 15px;
   font-size: 0.96em;
 }
